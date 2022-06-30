@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="touchpunch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+</head>
+<body >
+    <img src="pokedex.png" alt="" id="stay" height="30px">
+    <h1>Pattern Creator</h1>
+   
+    <a class="btn btn-success btn-gradient" href="javascript:void(0);"
+    onclick="generateScreenshot();"><span>Save</span></a>
+   
+    <br>
+    <div  id="wrapper" class="box">
+        <div id="image">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="20px" class="dragme">
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function generateScreenshot() {
+
+            setTimeout(() => {
+                html2canvas(document.getElementById('wrapper'), {
+                    logging: true,
+                    profile: true,
+                    scale: 2,
+                    useCORS: true,
+                    backgroundColor: null,
+                }).then(function (canvas) {
+                    var data = canvas.toDataURL('image/png', 0.9)
+                    var src = encodeURI(data);
+
+                    // document.getElementById('screenshot').src = src;
+                    const link = document.createElement('a')
+                    link.href = src
+                    link.download = 'pattern.png'
+                    document.body.appendChild(link)
+                    link.click()
+                    document.body.removeChild(link)
+                    document.getElementById('size').innerHTML = src.length + ' bytes';
+                });
+            }, 1000);
+        }
+
+
+    </script>
+ <form id='post-form' class='post-form' method='post'>
+    <input id='files' type='file' multiple/>
+    <output id='result'>
+  </form>
+</body>
+</html>
