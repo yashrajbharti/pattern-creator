@@ -1,9 +1,12 @@
 $(function () {
   $(".dragme").draggable({});
 });
-function randomIntFromInterval(min, max) {
+var k = 0;
+function numberFromInterval(min, max) {
   // min and max included
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  if (k > max)
+  k = min;
+  return k++
 }
 var files;
 var elements = document.getElementsByClassName("dragme");
@@ -15,7 +18,7 @@ window.onload = function () {
       files = event.target.files; //FileList object
       var j = 0;
       for (var i = 0; i < 90; i++) {
-        var file = files[randomIntFromInterval(0, files.length - 1)];
+        var file = files[numberFromInterval(0, files.length - 1)];
         //Only pics
         if (!file.type.match("image")) continue;
         var picReader = new FileReader();
@@ -35,7 +38,7 @@ window.onload = function () {
 function reshuffle() {
   var j = 0;
   for (var i = 0; i < 90; i++) {
-    var file = files[randomIntFromInterval(0, files.length - 1)];
+    var file = files[numberFromInterval(0, files.length - 1)];
 
     var picReader = new FileReader();
     picReader.addEventListener("load", function (event) {
