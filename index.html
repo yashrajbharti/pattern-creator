@@ -16,104 +16,105 @@
 <body >
     <img src="pokedex.png" alt="" id="stay" height="30px">
     <h1>Pattern Creator</h1>
-   
+   <div style="display: inline;">
     <a class="btn btn-success btn-gradient" href="javascript:void(0);"
     onclick="generateScreenshot();"><span>Save</span></a>
-   
+    <a onclick="reshuffle()" class="btn btn-success btn-gradient" id="reshuffle"><span>Reshuffle</span></a>
+</div>
     <br>
     <div  id="wrapper" class="box">
         <div id="image">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
-        <img src="x.png" alt=""   height="20px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+        <img src="x.png" alt=""   height="30px" class="dragme">
+     
     </div>
     </div>
     <script src="script.js"></script>
@@ -149,5 +150,12 @@
     <input id='files' type='file' multiple/>
     <output id='result'>
   </form>
+  <br>
+  <br>
+  <div class="slidecontainer">
+    <input type="range" min="-180" max="180" value="-30" class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p>
+  </div>
+  <script src="slider.js"></script>
 </body>
 </html>
