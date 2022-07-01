@@ -35,7 +35,8 @@ body {
   background-size: auto 50%;
   background-position: center; */
   height: 100vh;
-  overflow-x: hidden;
+  width:100vw;
+  overflow-x: hidden !important;
   box-sizing: border-box;
   align-items: center;
   text-align: center;
