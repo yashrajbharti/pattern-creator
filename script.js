@@ -1,12 +1,15 @@
 $(function () {
-  $(".dragme").draggable({});
+  $(".dragme").draggable({
+    grid: [3,3]
+  });
 });
 var k = 0;
 function numberFromInterval(min, max) {
   // min and max included
+  k++;
   if (k > max)
   k = min;
-  return k++
+  return k
 }
 var files;
 var elements = document.getElementsByClassName("dragme");
