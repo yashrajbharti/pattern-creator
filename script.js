@@ -3,14 +3,7 @@ $(function () {
     grid: [3,3]
   });
 });
-var k = 0;
-function numberFromInterval(min, max) {
-  // min and max included
-  k++;
-  if (k > max)
-  k = min;
-  return k
-}
+
 var files;
 var elements = document.getElementsByClassName("dragme");
 window.onload = function () {
@@ -19,9 +12,10 @@ window.onload = function () {
     var filesInput = document.getElementById("files");
     filesInput.addEventListener("change", function (event) {
       files = event.target.files; //FileList object
+      
       var j = 0;
-      for (var i = 0; i < 90; i++) {
-        var file = files[numberFromInterval(0, files.length - 1)];
+      for (var i = 0; i < files.length; i++) {
+        var file = files[i];
         //Only pics
         if (!file.type.match("image")) continue;
         var picReader = new FileReader();
@@ -38,10 +32,12 @@ window.onload = function () {
   }
 };
 
-function reshuffle() {
-  var j = 0;
-  for (var i = 0; i < 90; i++) {
-    var file = files[numberFromInterval(0, files.length - 1)];
+var repeatme = 0;
+function Repeat() {
+  repeatme++;
+  var j = files.length* repeatme;
+  for (var i = 0; i < files.length; i++) {
+    var file = files[i];
 
     var picReader = new FileReader();
     picReader.addEventListener("load", function (event) {
@@ -52,3 +48,5 @@ function reshuffle() {
     picReader.readAsDataURL(file);
   }
 }
+
+
